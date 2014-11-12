@@ -1,2 +1,2 @@
 #!/bin/sh
-screen -AmdS bundle exec ruboty --dotenv
+screen -AmdS bin/ruboty --dotenv
