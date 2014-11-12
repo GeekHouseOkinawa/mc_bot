@@ -1,2 +1,2 @@
 #!/bin/sh
-screen -AmdS bin/ruboty --dotenv
+screen -AmdS ./bin/ruboty --dotenv
