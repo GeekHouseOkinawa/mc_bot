@@ -12,7 +12,7 @@ module Ruboty
         end
 
         def minecraft_command
-          "say #{message[:text]}$(printf \\\\r)"
+          %("say #{message[:text]}$(printf \\\\r)")
         end
       end
     end
