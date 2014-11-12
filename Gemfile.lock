@@ -21,6 +21,7 @@ GEM
     pusher-client (0.5.0)
       json
       websocket (~> 1.1.2)
+    rb-readline (0.5.1)
     ruboty (1.0.4)
       activesupport
       bundler
@@ -40,6 +41,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  rb-readline
   ruboty
   ruboty-idobata
   ruboty-minecraft!
