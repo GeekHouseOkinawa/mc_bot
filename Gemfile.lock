@@ -1,3 +1,9 @@
+PATH
+  remote: ./ruboty-minecraft
+  specs:
+    ruboty-minecraft (0.0.1)
+      ruboty
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -36,3 +42,4 @@ PLATFORMS
 DEPENDENCIES
   ruboty
   ruboty-idobata
+  ruboty-minecraft!
