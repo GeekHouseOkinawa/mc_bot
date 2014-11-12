@@ -5,9 +5,14 @@ module Ruboty
     module Actions
       class Say < Ruboty::Actions::Base
         def call
-          `screen -S minecraft -p 0 -X stuff "say #{Shellwords.escape(message[:text])}$(printf \\r)"`
+          message.reply(message[:text])
+          `screen -S minecraft -p 0 -X stuff #{Shellwords.escape(minecraft_command)}`
         rescue => e
           message.reply(e.message)
+        end
+
+        def minecraft_command
+          "say #{message[:text]}$(printf \\\\r)"
         end
       end
     end
