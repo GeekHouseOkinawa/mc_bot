@@ -13,7 +13,7 @@ module Ruboty
         end
 
         def text
-          message[:text]
+          "<#{message.from_name}> #{message[:text]}"
         end
       end
     end
