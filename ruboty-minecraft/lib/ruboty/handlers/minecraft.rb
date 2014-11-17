@@ -6,6 +6,7 @@ module Ruboty
       on /.*/, name: 'say', description: 'say minecraft', all: true, hidden: true
 
       def say(message)
+        return if message.from_name == message.robot.name
         Ruboty::Minecraft::Actions::Say.new(message).call
       end
     end
