@@ -6,11 +6,10 @@ module Ruboty
       class Say < Ruboty::Actions::Base
         def call
           `screen -S minecraft -p 0 -X stuff say\\ #{Shellwords.escape(text)}`
-          `screen -S minecraft -p 0 -X stuff "$(printf \\\\r)"`
         end
 
         def text
-          "<#{message.from_name}> #{message.body}"
+          "<#{message.from_name}> #{message.body}\r"
         end
       end
     end
